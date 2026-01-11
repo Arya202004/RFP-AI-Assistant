@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+aiohttp
+python-dotenv
+google-generativeai
+mistralai
+PyPDF2
+python-docx

@@ -1,0 +1,18 @@
+# Standard Node.js ignores
+node_modules/
+dist/
+.DS_Store
+
+# Standard Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+backend/env/
+
+# SENSITIVE DATA - Environment Variables
+.env
+backend/.env
+
+# Local logs
+*.log
