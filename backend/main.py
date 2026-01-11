@@ -6,7 +6,9 @@ import re
 from data_utils import extract_text_from_bytes
 from llm_utils import analyze_rfp_with_dual_llm
 
-app = FastAPI()
+# When deploying on Vercel, we use the /api prefix for all backend routes.
+# We set root_path to ensure internal FastAPI routing handles this prefix correctly.
+app = FastAPI(root_path="/api")
 
 app.add_middleware(
     CORSMiddleware,
