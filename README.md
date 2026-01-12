@@ -28,23 +28,19 @@ The platform is powered by a **Double-Lock Intelligence System**:
 
 ```text
 RFP-AI-Analyzer/
-├── backend/
-│   ├── main.py             # FastAPI App & Universal Score Guard
-│   ├── llm_utils.py        # Gemini/Mistral Dual-LLM Pipeline
-│   ├── data_utils.py       # File Parsing & Text Extraction
-│   ├── .env                # API Keys (Gemini & Mistral)
-│   ├── requirements.txt    # Backend Dependencies
-│   └── company_profile.json # Static Company Fallback Context
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx         # Application Root & UI Logic
-│   │   ├── components/
-│   │   │   └── Dashboard.jsx # High-Fidelity Insights & Match Index
-│   │   └── index.css       # Neon-Corporate Design System
-│   ├── index.html          # Entry Point
-│   ├── package.json        # Frontend Dependencies
-│   ├── tailwind.config.js  # UI Styling Configuration
-│   └── vite.config.js      # Build Configuration
+├── api/                    # Serverless Backend Pod
+│   ├── index.py             # Vercel Entry Point
+│   ├── main.py              # FastAPI Application
+│   ├── llm_utils.py         # Dual-LLM Logic
+│   ├── data_utils.py        # File Processing
+│   ├── requirements.txt     # Backend Dependencies
+│   └── company_profile.json # Fallback Context
+├── frontend/               # UI Layer
+│   ├── src/                 # React Source
+│   ├── package.json         # UI Dependencies
+│   └── vite.config.js       # Build Config
+├── .gitignore              # Dependency & Secret Ignore
+├── vercel.json             # Monorepo Routing
 └── README.md               # Project Documentation
 ```
 
