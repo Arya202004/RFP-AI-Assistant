@@ -1,12 +1,18 @@
 {
     "version": 2,
     "rewrites": [
-        { "source": "/api/(.*)", "destination": "backend/api/index.py" },
-        { "source": "/(.*)", "destination": "/frontend/$1" }
+        {
+            "source": "/api/(.*)",
+            "destination": "backend/api/index.py"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/frontend/$1"
+        }
     ],
     "functions": {
         "backend/api/index.py": {
-            "runtime": "vercel-python@0.1.0"
+            "maxDuration": 30
         }
     }
 }
